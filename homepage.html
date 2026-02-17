@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <h1 class="logo"></h1>
+      <div class="nav-links">
+        <ul class="nav">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="profile.html">About Me</a></li>
+          <li><a href="mybrews.html">My Brews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="drop-icon" id="dropIcon">...</p>
+    <script>
+      const dropIcon = document.getElementById("dropIcon");
+      const navbar = document.getElementById("navbar");
+
+      dropIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
+    <section class="content-section">
+      <h2 class="section-title">Do you enjoy craft beers?</h2>
+      <p>
+        Join the club! Here you can get my own reviews on craft beers and the
+        atmosphere of breweries I visit. I also share details about my own
+        personal brews and rate them the same as all the other crafts I try.
+      </p>
+      <p>
+        Feel free to reach out to me with any questions, comments, or
+        suggestions. I love hearing from fellow beer enthusiasts and am always
+        open to discussing new brews or sharing brewing tips!
+      </p>
+    </section>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/emmakateziemer" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/emmakateziemer21/"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </body>
+</html>

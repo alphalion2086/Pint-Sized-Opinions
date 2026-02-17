@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <h1 class="logo"></h1>
+      <div class="nav-links">
+        <ul class="nav">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="profile.html">About Me</a></li>
+          <li><a href="mybrews.html">My Brews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="drop-icon" id="dropIcon">...</p>
+    <img src="profile.jpg" alt="Profile" class="profile-image" />
+    <script>
+      const dropIcon = document.getElementById("dropIcon");
+      const navbar = document.getElementById("navbar");
+
+      dropIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
+    <main>
+      <h2 class="section-title">About me</h2>
+      <p class="about-me">
+        Hey! My name is EmmaKate Ziemer. I previously worked as an Assistant
+        Brewer in the Midwest. I grew up in Minnesota and lived in the Midwest
+        until I was in my early 20s. I moved to North Carolina and fell in love
+        with it immediately. Unfortunately, I couldn’t bring my job with me. I
+        still have a huge love for craft beer and enjoy finding new taprooms and
+        crafts. I want to share my experiences and my opinions on the ones I
+        try. As well as rating my own homebrews which I look for inspiration on
+        constantly.
+      </p>
+    </main>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/emmakateziemer" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/emmakateziemer21/"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </body>
+</html>
