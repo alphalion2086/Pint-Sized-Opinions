@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tropical Beer Hug</title>
+    <link rel="stylesheet" href="tropicalbeerhug.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <h1 class="logo"></h1>
+      <div class="nav-links">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="profile.html">About Me</a></li>
+          <li><a href="mybrews.html">My Brews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="drop-icon" id="dropIcon">...</p>
+
+    <main class="tropical-section">
+      <h1 class="tropical-title">Tropical Beer Hug</h1>
+    </main>
+
+    <main class="tropical-review-container">
+      <section class="tropical-review-articles">
+        <h2 class="tropical-review-article-title">Tropical Beer Hug</h2>
+        <p class="brewery-name">Goose Island Beer Co.</p>
+        <div class="from">(Bought in store)</div>
+        <img
+          src="Images/tropicalbeerhug-copy.jpg"
+          alt="Tropical Beer Hug can"
+          class="review-image"
+        />
+      </section>
+
+      <section class="review-content">
+        <h2 class="review-subtitle">Name and Can Appearance</h2>
+        <p class="review-text">
+          This IPA comes in a light blue color and a purple shaded beer on the
+          front. The can is bright but not too busy artistically. I love the
+          design of the can as well as the name of “Tropical Beer Hug”. These
+          can come in various sizes from 12oz to 19.2oz.
+        </p>
+
+        <h2 class="review-subtitle">ABV and Flavor</h2>
+        <p class="review-text">
+          Before I tried this Imperial IPA, I was a little skeptical. Not for
+          any reason other than, I just started to find IPAs I enjoy. It
+          contains 9.9% ABV and has a Tropical profile with an IBU of 45. I was
+          shocked at the flavor combination and that it wasn't an overpoweringly
+          hoppy taste for me. The flavors consisted of pineapple, mango, and
+          peach. I really enjoyed this Imperial and its refreshing mouthfeel.
+          With the ABV though, I wouldn’t be able to consistently drink it. I
+          would recommend giving this brew a try for not just IPA lovers but
+          everyone.
+        </p>
+      </section>
+    </main>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/emmakateziemer" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/emmakateziemer21/"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Pint Sized Opinions |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a
+          href="https://untappd.com/user/Emmakateziemer"
+          class="untappd-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Find me on Untappd</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      const dropIcon = document.getElementById("dropIcon");
+      const navbar = document.getElementById("navbar");
+
+      dropIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

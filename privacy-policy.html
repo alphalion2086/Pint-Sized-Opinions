@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="privacy-policy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <h1 class="logo"></h1>
+      <div class="nav-links">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="profile.html">About Me</a></li>
+          <li><a href="mybrews.html">My Brews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="drop-icon" id="dropIcon">...</p>
+
+    <main class="policy-container">
+      <h1 class="policy-title">Privacy Policy</h1>
+      <p class="policy-updated">Last updated: February 18, 2026</p>
+
+      <section class="policy-section">
+        <h2>Information I Collect</h2>
+        <p>
+          When you contact me through the contact form, I may collect your name,
+          email address, and the message you send.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>How I Use Your Information</h2>
+        <p>
+          I use your information only to respond to your messages, improve this
+          website, and communicate about beer-related content when relevant.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Third-Party Services</h2>
+        <p>
+          This site uses third-party services such as Formspree to process
+          contact form submissions. Their privacy practices apply to any data
+          submitted through those services.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Your Choices</h2>
+        <p>
+          You may contact me anytime to ask questions about your submitted data
+          or request removal of information sent through the contact form.
+        </p>
+      </section>
+    </main>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/emmakateziemer" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/emmakateziemer21/"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Pint Sized Opinions |
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
+    </footer>
+
+    <script>
+      const dropIcon = document.getElementById("dropIcon");
+      const navbar = document.getElementById("navbar");
+
+      dropIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -2,8 +2,8 @@
 
 body {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7)),
-    url("Images/background.jpg");
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7)),
+    url("Images/dark background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -24,24 +25,29 @@ body {
   font-family: "Red Rose", serif;
   transition: all 0.3s ease;
 }
+
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
   color: white;
   text-decoration: none;
 }
+
 .navbar .nav-links {
   display: flex;
   gap: 20px;
 }
+
 .nav {
   display: flex;
   gap: 30px;
   align-items: center;
 }
+
 .nav li {
   display: inline;
 }
+
 .navbar .nav-links a {
   color: white;
   text-decoration: none;
@@ -49,10 +55,12 @@ body {
   padding: 8px 12px;
   transition: all 0.3s ease;
 }
+
 .navbar .nav-links a:hover {
   background-color: #d0d0d0;
   border-radius: 8px;
 }
+
 .drop-icon {
   position: absolute;
   top: 10px;
@@ -64,15 +72,81 @@ body {
   text-align: right;
   color: white;
 }
+
+.brewquestions-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.brewquestions-title {
+  color: white;
+  font-size: 42px;
+  font-family: "Red Rose", serif;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
+}
+
+.questions-section {
+  max-width: 620px;
+  margin: auto auto 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38));
+  font-family: "Red Rose", serif;
+  color: white;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.questions-text {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.homebrew-section {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
+}
+
+.homebrew-card {
+  margin-top: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: linear-gradient(rgba(139, 115, 85, 0.32), rgba(0, 0, 0, 0.32));
+  padding: 14px 16px;
+}
+
+.homebrew-title {
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.homebrew-text {
+  margin-top: 12px;
+  font-size: 17px;
+  line-height: 1.85;
+  text-align: center;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
   gap: 16px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 40px;
 }
+
 .social-icons a {
   text-decoration: none;
   color: white;
@@ -83,14 +157,12 @@ body {
   border: none;
   outline: none;
 }
+
 .social-icons a:hover {
   color: #e6e6e6;
   transform: translateY(-2px);
 }
-.social-icons a:focus {
-  outline: none;
-  border: none;
-}
+
 .site-footer {
   position: relative;
   z-index: 10;
@@ -99,9 +171,8 @@ body {
   font-family: "Red Rose", serif;
   font-size: 16px;
   letter-spacing: 0.4px;
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: 0;
-  padding-top: 20px;
   padding-bottom: 24px;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
 }
@@ -123,59 +194,6 @@ body {
 .site-footer .untappd-link:hover {
   color: #ffd99a;
 }
-header {
-  height: 100vh;
-  width: 100vh;
-}
-.reviews-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  gap: 24px;
-  font-family: "Red Rose", serif;
-}
-
-.reviews-title {
-  color: white;
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.review-options {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.review-option {
-  width: 220px;
-  text-align: center;
-  padding: 24px 20px;
-  border: 2px solid white;
-  border-radius: 10px;
-  color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.65);
-  transition:
-    background 0.3s ease,
-    transform 0.3s ease;
-}
-
-.review-option:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  transform: translateY(-2px);
-}
 
 * {
   margin: 0;
@@ -183,6 +201,7 @@ header {
   text-decoration: none;
   list-style: none;
 }
+
 @media screen and (max-width: 900px) {
   .navbar {
     display: none;
@@ -201,12 +220,15 @@ header {
     border-radius: 8px;
     animation: slideDown 0.3s ease forwards;
   }
+
   .navbar.active {
     display: flex;
   }
+
   .nav {
     flex-direction: column;
   }
+
   @keyframes slideDown {
     from {
       transform: translateY(-100%);
@@ -217,10 +239,46 @@ header {
       opacity: 1;
     }
   }
+
   .drop-icon {
     display: block;
     cursor: pointer;
   }
+
+  .brewquestions-section {
+    margin-top: 120px;
+  }
+
+  .brewquestions-title {
+    font-size: 32px;
+  }
+
+  .questions-section {
+    margin: auto 16px 12px;
+    padding: 12px 12px;
+  }
+
+  .homebrew-section {
+    margin: 0 16px 20px;
+    padding: 0;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .questions-text {
+    font-size: 15px;
+  }
+
+  .homebrew-title {
+    font-size: 21px;
+  }
+
+  .homebrew-text {
+    font-size: 16px;
+  }
+
   .social-icons {
     flex-direction: row;
     justify-content: center;
@@ -229,21 +287,9 @@ header {
     margin-top: 120px;
     margin-bottom: 24px;
   }
-  .reviews-section {
-    margin-top: 120px;
-    padding: 0 16px;
-  }
-  .reviews-title {
-    font-size: 32px;
-    padding: 6px 12px;
-  }
-  .review-option {
-    width: 100%;
-    max-width: 320px;
-  }
+
   .site-footer {
     font-size: 15px;
-    padding-top: 16px;
     padding-bottom: 20px;
   }
 }
@@ -252,6 +298,7 @@ header {
   .navbar {
     display: flex !important;
   }
+
   .drop-icon {
     display: none;
   }

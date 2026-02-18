@@ -2,8 +2,8 @@
 
 body {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7)),
-    url("Images/background.jpg");
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.7)),
+    url("Images/dark background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -24,24 +25,29 @@ body {
   font-family: "Red Rose", serif;
   transition: all 0.3s ease;
 }
+
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
   color: white;
   text-decoration: none;
 }
+
 .navbar .nav-links {
   display: flex;
   gap: 20px;
 }
+
 .nav {
   display: flex;
   gap: 30px;
   align-items: center;
 }
+
 .nav li {
   display: inline;
 }
+
 .navbar .nav-links a {
   color: white;
   text-decoration: none;
@@ -49,10 +55,12 @@ body {
   padding: 8px 12px;
   transition: all 0.3s ease;
 }
+
 .navbar .nav-links a:hover {
   background-color: #d0d0d0;
   border-radius: 8px;
 }
+
 .drop-icon {
   position: absolute;
   top: 10px;
@@ -64,6 +72,92 @@ body {
   text-align: right;
   color: white;
 }
+
+.tropical-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 16px;
+  font-family: "Red Rose", serif;
+}
+
+.tropical-title {
+  color: white;
+  font-size: 42px;
+  font-family: "Red Rose", serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  background: linear-gradient(rgba(139, 115, 85, 0.5), rgba(0, 0, 0, 0.35));
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.tropical-review-container {
+  max-width: 900px;
+  margin: 28px auto 0;
+  padding: 28px 32px;
+  border-radius: 14px;
+  background: linear-gradient(rgba(139, 115, 85, 0.3), rgba(0, 0, 0, 0.45));
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.4);
+  color: white;
+  font-family: "Red Rose", serif;
+}
+
+.tropical-review-articles,
+.review-content {
+  line-height: 2;
+}
+
+.tropical-review-article-title,
+.brewery-name,
+.from,
+.review-subtitle,
+.review-text {
+  color: white;
+}
+
+.tropical-review-article-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.brewery-name {
+  font-size: 22px;
+  text-align: center;
+}
+
+.from {
+  font-size: 16px;
+  opacity: 0.95;
+  text-align: center;
+}
+
+.review-image {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 260px;
+  object-fit: contain;
+  margin: 18px auto 0;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.review-subtitle {
+  margin-top: 18px;
+  font-size: 26px;
+  text-align: center;
+  color: #f0e4d6;
+}
+
+.review-text {
+  font-size: 18px;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -73,6 +167,7 @@ body {
   margin-top: 100px;
   margin-bottom: 40px;
 }
+
 .social-icons a {
   text-decoration: none;
   color: white;
@@ -83,14 +178,12 @@ body {
   border: none;
   outline: none;
 }
+
 .social-icons a:hover {
   color: #e6e6e6;
   transform: translateY(-2px);
 }
-.social-icons a:focus {
-  outline: none;
-  border: none;
-}
+
 .site-footer {
   position: relative;
   z-index: 10;
@@ -101,15 +194,12 @@ body {
   letter-spacing: 0.4px;
   margin-top: auto;
   margin-bottom: 0;
-  padding-top: 20px;
   padding-bottom: 24px;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
 }
 
 .site-footer a {
   color: white;
-  cursor: pointer;
-  pointer-events: auto;
 }
 
 .site-footer a:hover {
@@ -123,59 +213,6 @@ body {
 .site-footer .untappd-link:hover {
   color: #ffd99a;
 }
-header {
-  height: 100vh;
-  width: 100vh;
-}
-.reviews-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  gap: 24px;
-  font-family: "Red Rose", serif;
-}
-
-.reviews-title {
-  color: white;
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.review-options {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.review-option {
-  width: 220px;
-  text-align: center;
-  padding: 24px 20px;
-  border: 2px solid white;
-  border-radius: 10px;
-  color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.65);
-  transition:
-    background 0.3s ease,
-    transform 0.3s ease;
-}
-
-.review-option:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  transform: translateY(-2px);
-}
 
 * {
   margin: 0;
@@ -183,6 +220,7 @@ header {
   text-decoration: none;
   list-style: none;
 }
+
 @media screen and (max-width: 900px) {
   .navbar {
     display: none;
@@ -201,12 +239,15 @@ header {
     border-radius: 8px;
     animation: slideDown 0.3s ease forwards;
   }
+
   .navbar.active {
     display: flex;
   }
+
   .nav {
     flex-direction: column;
   }
+
   @keyframes slideDown {
     from {
       transform: translateY(-100%);
@@ -217,10 +258,46 @@ header {
       opacity: 1;
     }
   }
+
   .drop-icon {
     display: block;
     cursor: pointer;
   }
+
+  .tropical-section {
+    margin-top: 120px;
+  }
+
+  .tropical-review-container {
+    margin: 22px 16px 0;
+    padding: 22px 18px;
+  }
+
+  .tropical-title {
+    font-size: 32px;
+    padding: 6px 12px;
+  }
+
+  .tropical-review-article-title {
+    font-size: 28px;
+  }
+
+  .brewery-name {
+    font-size: 20px;
+  }
+
+  .review-subtitle {
+    font-size: 22px;
+  }
+
+  .review-text {
+    font-size: 17px;
+  }
+
+  .review-image {
+    max-width: 100%;
+  }
+
   .social-icons {
     flex-direction: row;
     justify-content: center;
@@ -229,21 +306,9 @@ header {
     margin-top: 120px;
     margin-bottom: 24px;
   }
-  .reviews-section {
-    margin-top: 120px;
-    padding: 0 16px;
-  }
-  .reviews-title {
-    font-size: 32px;
-    padding: 6px 12px;
-  }
-  .review-option {
-    width: 100%;
-    max-width: 320px;
-  }
+
   .site-footer {
     font-size: 15px;
-    padding-top: 16px;
     padding-bottom: 20px;
   }
 }
@@ -252,6 +317,7 @@ header {
   .navbar {
     display: flex !important;
   }
+
   .drop-icon {
     display: none;
   }

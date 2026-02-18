@@ -16,7 +16,7 @@
       <h1 class="logo"></h1>
       <div class="nav-links">
         <ul class="nav">
-          <li><a href="homepage.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="reviews.html">Reviews</a></li>
           <li><a href="articles.html">Articles</a></li>
           <li><a href="profile.html">About Me</a></li>
@@ -26,7 +26,37 @@
       </div>
     </nav>
     <p class="drop-icon" id="dropIcon">...</p>
-    <img src="Images/Profile.jpg" alt="Profile" class="profile-image" />
+
+    <main class="profile-main">
+      <section class="profile-card">
+        <img src="Images/Profile.jpg" alt="Profile" class="profile-image" />
+        <div class="profile-content">
+          <h2 class="section-title">Hi, I’m EmmaKate Ziemer</h2>
+          <p class="intro-line">
+            Craft beer lover, former Assistant Brewer, and honest reviewer.
+          </p>
+          <p class="about-me">
+            I previously worked as an Assistant Brewer in the Midwest. I grew up
+            in Minnesota and later moved to North Carolina, where I quickly fell
+            in love with the local beer scene. Even though I couldn’t bring my
+            brewery job with me, I still have a huge passion for craft beer and
+            discovering new taprooms.
+          </p>
+          <p class="about-me">
+            This page is where I share my personal beer reviews, brewery
+            experiences, and homebrew ratings. My goal is to keep things fun,
+            real, and helpful for anyone exploring new brews.
+          </p>
+          <div class="profile-highlights">
+            <span>Former Assistant Brewer</span>
+            <span>Minnesota roots</span>
+            <span>Now in North Carolina</span>
+            <span>Homebrew + Brewery Reviews</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script>
       const dropIcon = document.getElementById("dropIcon");
       const navbar = document.getElementById("navbar");
@@ -35,19 +65,6 @@
         navbar.classList.toggle("active");
       });
     </script>
-    <main>
-      <h2 class="section-title">About me</h2>
-      <p class="about-me">
-        Hey! My name is EmmaKate Ziemer. I previously worked as an Assistant
-        Brewer in the Midwest. I grew up in Minnesota and lived in the Midwest
-        until I was in my early 20s. I moved to North Carolina and fell in love
-        with it immediately. Unfortunately, I couldn’t bring my job with me. I
-        still have a huge love for craft beer and enjoy finding new taprooms and
-        crafts. I want to share my experiences and my opinions on the ones I
-        try. As well as rating my own homebrews which I look for inspiration on
-        constantly.
-      </p>
-    </main>
     <div class="social-icons">
       <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
         <i class="fa-brands fa-facebook-f"></i>
@@ -62,5 +79,18 @@
         <i class="fa-brands fa-instagram"></i>
       </a>
     </div>
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Pint Sized Opinions |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a
+          href="https://untappd.com/user/Emmakateziemer"
+          class="untappd-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Find me on Untappd</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

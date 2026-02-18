@@ -11,6 +11,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .navbar {
   display: flex;
@@ -62,36 +64,78 @@ body {
   text-align: right;
   color: white;
 }
+.profile-main {
+  padding: 50px 24px 20px;
+}
+
+.profile-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+  border-radius: 14px;
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+  font-family: "Red Rose", serif;
+  color: white;
+}
+
 .profile-image {
   display: block;
-  margin: 80px 0 20px 40px;
+  margin: 0 auto;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
 }
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.intro-line {
+  font-size: 20px;
+  color: #f4d8aa;
+}
+
 .about-me {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: 40px;
-  text-align: right;
-  line-height: 2.5;
+  margin: 0;
+  text-align: left;
+  line-height: 1.9;
+  font-size: 18px;
 }
+
 .section-title {
-  max-width: 600px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: 40px;
-  margin-bottom: 0;
-  text-align: right;
-  color: black;
-  font-family: "Red Rose", serif;
+  margin: 0;
+  text-align: left;
+  color: white;
+  font-size: 38px;
 }
-main {
-  display: block;
-  padding-right: 40px;
+
+.profile-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
+.profile-highlights span {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: linear-gradient(
+    rgba(139, 115, 85, 0.35),
+    rgba(139, 115, 85, 0.35)
+  );
+  font-size: 15px;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -117,6 +161,37 @@ main {
 .social-icons a:focus {
   outline: none;
   border: none;
+}
+.site-footer {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  font-family: "Red Rose", serif;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-bottom: 24px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+}
+
+.site-footer a {
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.site-footer a:hover {
+  color: #e6e6e6;
+}
+
+.site-footer .untappd-link {
+  color: #f4c16e;
+}
+
+.site-footer .untappd-link:hover {
+  color: #ffd99a;
 }
 header {
   height: 100vh;
@@ -166,6 +241,36 @@ header {
     display: block;
     cursor: pointer;
   }
+  .profile-main {
+    padding: 120px 16px 10px;
+  }
+  .profile-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .profile-image {
+    width: 220px;
+    height: 220px;
+  }
+  .profile-content {
+    align-items: center;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .intro-line {
+    font-size: 18px;
+  }
+  .about-me {
+    text-align: center;
+    font-size: 17px;
+  }
+  .profile-highlights {
+    justify-content: center;
+  }
   .social-icons {
     flex-direction: row;
     justify-content: center;
@@ -173,6 +278,10 @@ header {
     gap: 20px;
     margin-top: 120px;
     margin-bottom: 24px;
+  }
+  .site-footer {
+    font-size: 15px;
+    padding-bottom: 20px;
   }
 }
 

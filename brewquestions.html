@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew Questions</title>
+    <link rel="stylesheet" href="brewquestions.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <h1 class="logo"></h1>
+      <div class="nav-links">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="profile.html">About Me</a></li>
+          <li><a href="mybrews.html">My Brews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="drop-icon" id="dropIcon">...</p>
+
+    <main class="brewquestions-section">
+      <h1 class="brewquestions-title">Brew Questions</h1>
+    </main>
+
+    <section class="homebrew-section">
+      <details class="homebrew-card">
+        <summary class="homebrew-title">Starting to Homebrew</summary>
+        <p class="homebrew-text">
+            <h2>How long does fermentation take?</h2>
+Fermentation usually takes 1-2 weeks but this can vary for different beer styles. Temperature plays a big role in fermentation as well and can also vary per style. The process can be challenging for some and may feel like a guessing game. Relax, stick to the plan. When it is getting close to the fermentation end time, take readings (using hydrometer) each day for around five days. When the readings come out the same three days in a row, I know it is ready.
+<h2>How important is sanitizing?</h2>
+Sanitizing is one of, if not the most important part in brewing. Any bacteria left or trapped inside will reproduce in your brew. The temperature you store your brew in is also a perfect temperature for bacteria. I like to remind everyone, sanitize everything, even the things you think you don’t need to, everything. I try to sanitize right before I use certain tools/products instead of doing it all at once then letting them sit until you need them.
+<h2>How do I know what hops and grains to use?</h2>
+This is all a part of the fun. Experimenting with various different ingredients is easy and can give your brew a variety of different flavors. It’s really up to you! Hops have different styles and aromas. You can choose how “hoppy” you would like your beer, for example, IPAs. Grains provide the sugars needed in fermentation but also flavor, mouthfeel, and color.
+        </p>
+      </details>
+    </section>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/emmakateziemer" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/emmakateziemer21/"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+    <section class="questions-section">
+      <h2 class="section-title">Have questions about brewing?</h2>
+      <p class="questions-text">
+        Whether you're a seasoned homebrewer or just starting out, I'm here to
+        help! Feel free to ask me any questions you have about the brewing
+        process, ingredients, equipment, or anything else related to making your
+        own beer. I love sharing my knowledge and experience with fellow beer
+        enthusiasts and am always happy to offer advice or tips to help you
+        brew the best beer possible.
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Pint Sized Opinions |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a
+          href="https://untappd.com/user/Emmakateziemer"
+          class="untappd-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Find me on Untappd</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      const dropIcon = document.getElementById("dropIcon");
+      const navbar = document.getElementById("navbar");
+
+      dropIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reviews</title>
-    <link rel="stylesheet" href="reviews.css" />
+    <title>Review List</title>
+    <link rel="stylesheet" href="reviewlist.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -26,14 +26,23 @@
       </div>
     </nav>
     <p class="drop-icon" id="dropIcon">...</p>
-    <script>
-      const dropIcon = document.getElementById("dropIcon");
-      const navbar = document.getElementById("navbar");
 
-      dropIcon.addEventListener("click", function () {
-        navbar.classList.toggle("active");
-      });
-    </script>
+    <main class="reviewlist-section">
+      <h1 class="reviewlist-title">Review List</h1>
+      <div class="review-columns">
+        <section class="reviewlist-container list-left">
+          <ul class="review-items">
+            <li class="review-item">
+              <a href="tropicalbeerhug.html" class="review-item-link">
+                <h2 class="review-name">Tropical Beer Hug</h2>
+                <p class="review-brewery">Goose Island</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
     <div class="social-icons">
       <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
         <i class="fa-brands fa-facebook-f"></i>
@@ -48,14 +57,7 @@
         <i class="fa-brands fa-instagram"></i>
       </a>
     </div>
-    <section class="reviews-section">
-      <h1 class="reviews-title">Reviews</h1>
-      <div class="review-options">
-        <a href="reviewlist.html" class="review-option">BREWS</a>
-        <a href="#" class="review-option">BREWERIES</a>
-        <a href="most-recent.html" class="review-option">MOST RECENT</a>
-      </div>
-    </section>
+
     <footer class="site-footer">
       <p>
         &copy; 2026 Pint Sized Opinions |
@@ -69,5 +71,14 @@
         >
       </p>
     </footer>
+
+    <script>
+      const dropIcon = document.getElementById("dropIcon");
+      const navbar = document.getElementById("navbar");
+
+      dropIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
