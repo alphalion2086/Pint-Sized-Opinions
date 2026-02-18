@@ -65,7 +65,7 @@ body {
   color: white;
 }
 .profile-main {
-  padding: 50px 24px 20px;
+  padding: 70px 24px 20px;
 }
 
 .profile-card {
@@ -192,10 +192,6 @@ body {
 
 .site-footer .untappd-link:hover {
   color: #ffd99a;
-}
-header {
-  height: 100vh;
-  width: 100vh;
 }
 * {
   margin: 0;
