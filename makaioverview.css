@@ -38,7 +38,7 @@ body {
   display: flex;
   gap: 20px;
 }
-  font-weight: 500;
+font-weight: 500;
 
 .nav {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
