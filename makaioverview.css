@@ -84,6 +84,10 @@ body {
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
 }
 
+.overview-section h2 {
+  color: white;
+}
+
 .overview-images {
   margin-top: 26px;
   display: flex;
