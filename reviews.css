@@ -44,10 +44,15 @@ body {
 }
 .navbar .nav-links a {
   color: white;
+  background: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
   text-decoration: none;
   font-size: 18px;
+  font-weight: 500;
   padding: 8px 12px;
   transition: all 0.3s ease;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 .navbar .nav-links a:hover {
   background-color: #d0d0d0;
@@ -189,10 +194,7 @@ body {
     top: 100px;
     right: 10px;
     width: 200px;
-    background: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    );
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.68));
     padding: 20px;
     gap: 15px;
     border: 2px solid #333;
