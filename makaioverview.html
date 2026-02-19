@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makai Overview</title>
+    <link rel="stylesheet" href="makaioverview.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <h1 class="logo"></h1>
+      <div class="nav-links">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="profile.html">About Me</a></li>
+          <li><a href="mybrews.html">My Brews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="drop-icon" id="dropIcon">...</p>
+
+    <main class="overview-section">
+      <h1 class="overview-title">Makai Overview</h1>
+      <div class="overview-images">
+        <img
+          src="Images/makaipage.jpg"
+          alt="Makai brewery view 1"
+          class="overview-image"
+        />
+        <img
+          src="Images/makaipage2.jpg"
+          alt="Makai brewery view 2"
+          class="overview-image"
+        />
+        <img
+          src="Images/makaipage3.jpg"
+          alt="Makai brewery view 3"
+          class="overview-image"
+        />
+      </div>
+      <article class="overview-article">
+        <p class="overview-text">
+          Makai is spacious and has both indoor and outdoor seating. There is
+          plenty of seating on the inside, not including the bar space. This is
+          a great place for events or music. Bad Eatz is the name of the food
+          truck on site which serves Tex-Mex food, perfect for events hosted
+          here. Makai frequently hosts live music with a variety of different
+          artists and other special events. The vibe and overall atmosphere was
+          very fun and inviting. I love the theme of beers crafted by the sea,
+          which is perfect for the area. Located off Highway 17 in Ocean Isle
+          Beach, North Carolina. Go check it out!
+        </p>
+      </article>
+    </main>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="https://x.com/emmakateziemer" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+        <span class="sr-only">Twitter</span>
+      </a>
+      <a
+        href="https://www.instagram.com/emmakateziemer21/"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+        <span class="sr-only">Instagram</span>
+      </a>
+    </div>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Pint Sized Opinions |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a
+          href="https://untappd.com/user/Emmakateziemer"
+          class="untappd-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Find me on Untappd</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      const dropIcon = document.getElementById("dropIcon");
+      const navbar = document.getElementById("navbar");
+
+      dropIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
