@@ -124,6 +124,54 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.makai-reviewed {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.makai-reviewed-title {
+  color: #f3e2c5;
+  font-size: 30px;
+  text-align: center;
+}
+
+.makai-beer-grid {
+  margin-top: 18px;
+  width: min(900px, calc(100% - 80px));
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.makai-beer-card {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  color: white;
+  text-align: left;
+  font-size: 18px;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.makai-beer-card:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
+  transform: translateY(-1px);
+}
+
+.reviews-cta {
+  margin-top: 6px;
+  margin-bottom: 14px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -249,6 +297,30 @@ body {
     font-size: 17px;
     line-height: 1.8;
     padding: 16px 14px;
+  }
+
+  .makai-reviewed {
+    margin-top: 22px;
+  }
+
+  .makai-reviewed-title {
+    font-size: 24px;
+  }
+
+  .makai-beer-grid {
+    width: min(100%, calc(100% - 20px));
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .makai-beer-card {
+    font-size: 17px;
+  }
+
+  .reviews-cta {
+    font-size: 19px;
+    margin-top: 4px;
+    margin-bottom: 12px;
   }
 
   .social-icons {
