@@ -100,6 +100,72 @@ body {
   line-height: 1.8;
   margin-bottom: 16px;
 }
+.home-highlights {
+  width: min(1000px, 92%);
+  margin: 10px auto 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  font-family: "Red Rose", serif;
+}
+.featured-brew,
+.brew-timeline {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+}
+.featured-brew h3,
+.brew-timeline h3 {
+  font-size: 28px;
+  color: #f5f5f5;
+  margin-bottom: 14px;
+}
+.featured-brew img {
+  width: min(100%, 360px);
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+.featured-brew h4,
+.timeline-grid h4 {
+  font-size: 22px;
+  color: #f5f5f5;
+  margin-bottom: 8px;
+}
+.featured-brew p,
+.timeline-grid p {
+  font-size: 17px;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+.featured-brew a {
+  display: inline-block;
+  margin-top: 14px;
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+.timeline-card-link {
+  display: block;
+  color: inherit;
+}
+.timeline-grid article {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  padding: 14px;
+}
+.timeline-card-link article {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.timeline-card-link:hover article {
+  background: rgba(255, 255, 255, 0.24);
+}
 .social-icons {
   display: flex;
   justify-content: center;
@@ -200,6 +266,17 @@ body {
   .drop-icon {
     display: block;
     cursor: pointer;
+  }
+  .home-highlights {
+    width: min(700px, 94%);
+    margin-bottom: 24px;
+  }
+  .featured-brew h3,
+  .brew-timeline h3 {
+    font-size: 24px;
+  }
+  .timeline-grid {
+    grid-template-columns: 1fr;
   }
   .social-icons {
     flex-direction: row;
