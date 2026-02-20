@@ -42,11 +42,34 @@
     </script>
     <h1 class="coming-soon">Coming soon...</h1>
     <h2 class="brew-name">Tangerine Amber Ale</h2>
-    <img
-      class="brew-image"
-      src="Images/amberpour.jpg"
-      alt="Tangerine Amber Ale pour"
-    />
+    <section class="message-section">
+      <button class="message-toggle" id="messageToggle" type="button">
+        Process Update
+      </button>
+      <p class="message-text" id="messageText" hidden>
+        Bottled on 2/20/2026 I was very excited to begin bottling this beer and
+        get my final gravity. Then, I placed the hydrometer in the test tube……
+        1.011. I was immediately disappointed. 3.8% is not bad. Great for a
+        session beer and bringing out the flavor. I wanted to get this brew
+        around 4.3-4.5%. I think I definitely could have soaked my grains
+        longer to help raise the amount of sugar. Once I started transferring
+        the beer though, I wasn’t as disappointed anymore because it smelled
+        amazing. I can’t wait to try it. I’ll let you know in about two weeks!
+      </p>
+    </section>
+    <div class="brew-row">
+      <img
+        class="brew-image"
+        src="Images/amberpour.jpg"
+        alt="Tangerine Amber Ale pour"
+      />
+      <img
+        class="brew-image transferring-image"
+        src="Images/transferring.jpg"
+        alt="Transferring brew"
+      />
+    </div>
+    <img class="bottled-image" src="Images/bottled.jpg" alt="Bottled brew" />
     <div class="social-icons">
       <a href="https://www.facebook.com/bubs.ziemer" aria-label="Facebook">
         <i class="fa-brands fa-facebook-f"></i>
@@ -76,6 +99,21 @@
     </section>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script>
+      const messageToggle = document.getElementById("messageToggle");
+      const messageText = document.getElementById("messageText");
+
+      messageToggle.addEventListener("click", function () {
+        const isHidden = messageText.hasAttribute("hidden");
+        if (isHidden) {
+          messageText.removeAttribute("hidden");
+          messageToggle.textContent = "Hide brewer's note";
+        } else {
+          messageText.setAttribute("hidden", "");
+          messageToggle.textContent = "Click for a brewer's note";
+        }
+      });
     </script>
     <footer class="site-footer">
       <p>

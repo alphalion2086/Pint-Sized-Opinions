@@ -87,12 +87,58 @@ body {
   margin: 0 0 28px;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
 }
+.brew-row {
+  width: min(920px, 92%);
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 28px;
+}
 .brew-image {
   display: block;
-  width: min(90%, 420px);
+  width: min(100%, 360px);
+  height: auto;
+  margin: 0;
+  border-radius: 8px;
+}
+.transferring-image {
+  width: min(100%, 198px);
+}
+.message-section {
+  width: min(92%, 760px);
+  margin: 0 auto 20px;
+  font-family: "Red Rose", serif;
+}
+.message-toggle {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.message-toggle:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+.message-text {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.bottled-image {
+  display: block;
+  width: min(92%, 748px);
   height: auto;
   margin: 0 auto 28px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .social-icons {
   display: flex;
@@ -191,6 +237,17 @@ body {
   .drop-icon {
     display: block;
     cursor: pointer;
+  }
+  .brew-row {
+    width: min(94%, 520px);
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .brew-image,
+  .bottled-image,
+  .message-section {
+    width: 100%;
   }
   .social-icons {
     flex-direction: row;
